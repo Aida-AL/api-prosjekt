@@ -9,3 +9,4 @@ export interface CompodiumList {
     image: string
     name: string
 }
+
