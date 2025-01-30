@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import {CompodiumList } from "../types/types.ts";
-
-/*import CoCard from "./CoCard";*/
+import CompediumCard from "./CoCard";
 
 function ImgGrid(){
 
@@ -22,17 +21,15 @@ function ImgGrid(){
         
 
         return (
-            <div className="flex flex-wrap">
-                {material.map((material) => (
-                    <>
-                    <div key={material.name}>{material.name}</div>
-                    <img src={material.image}/>
-                    </>
+            <div id = "myGrid" className="grid grid-cols-4 gap-3">
+             {material.map((object) => (
+                    <CompediumCard key={object.id} object={object}/>
                ))}
             </div>
             
         );
 
 }
+
 
 export default ImgGrid;

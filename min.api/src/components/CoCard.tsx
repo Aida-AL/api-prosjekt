@@ -2,30 +2,27 @@ import { CompodiumList } from "../types/types";
 import {useEffect, useState} from "react";
 
 
-function compediumCard({material}: {material: CompodiumList}){
-    const [materialCard, setCard] = useState<CompodiumList [] | null>(null);
+function CompediumCard({object}: {object: CompodiumList}){
+    const [materialCard, setCard] = useState<any>(null);
 
 
     useEffect(() => {
-        fetch('materialCard')
-        .then(response => response.json())
-        .then((data) => {
-            setCard(data.data);
-        });
-        
+        fetch(`https://botw-compendium.herokuapp.com/api/v3/compendium/entry/${object.id}`)
+            .then(response => response.json())
+            .then((data) => {
+                setCard(data.data);
+            });
     }, []);
 
-    return (
-        <>
-                {materialCard && materialCard.map((material: { image: any; name: any; }) => (
-                    <div key={material.name}>
-                        <img src={material.image} alt={material.name} />
-                        <p>{material.name}</p>
-                    </div>
-                ))}
+    if (!materialCard) {
+        return <div>Loading...</div>;}
 
-        </>
-    );
+    return <div id="card">
+        <img src={materialCard.image} alt={materialCard.name}/>
+        {materialCard.name};
+        </div>
+
+    
 }
 
-export default compediumCard;
+export default CompediumCard;
