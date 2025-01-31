@@ -12,9 +12,10 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
       <QueryClientProvider client={queryClient}>
         <App/>
+        <ImgGrid />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
   </StrictMode>
 );
-          /*<ImgGrid />*/
+
 

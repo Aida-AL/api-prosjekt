@@ -7,7 +7,7 @@ function CompediumCard({object}: {object: CompodiumList}){
 
 
     useEffect(() => {
-        fetch(`https://botw-compendium.herokuapp.com/api/v3/compendium/entry/${object.id}`)
+         fetch(`https://botw-compendium.herokuapp.com/api/v3/compendium/entry/${object.name}`)
             .then(response => response.json())
             .then((data) => {
                 setCard(data.data);
