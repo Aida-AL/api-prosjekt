@@ -18,7 +18,7 @@ function CompediumCard({object}: {object: CompodiumList}){
         return <div>Loading...</div>;}
 
     return <div id="card">
-        <img src={materialCard.image} alt={materialCard.name}/>
+        <img src={materialCard.image} alt={materialCard.name} id="cardImg"/>
         {materialCard.name};
         </div>
 

@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+body{
+ background:url(../src/pictures/27948175156_c7b2367d07_o.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+#card{
+    background-color: rgb(215, 239, 240);
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+#cardImg{
+    width: 100%;
+    padding: 4%;
+}
+#myGrid{
+    margin: 7%;
+    padding: 2%;
+    background-color: cadetblue;
+}

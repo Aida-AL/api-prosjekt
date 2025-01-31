@@ -21,12 +21,11 @@ function ImgGrid(){
         
 
         return (
-            <div id = "myGrid" className="grid grid-cols-4 gap-3">
-             {material.map((object) => (
-                    <CompediumCard key={object.id} object={object}/>
-               ))}
-            </div>
-            
+                <div id = "myGrid" className="grid grid-cols-4 gap-3">
+                {material.map((object) => (
+                        <CompediumCard key={object.id} object={object}/>
+                ))}
+                </div>
         );
 
 }
