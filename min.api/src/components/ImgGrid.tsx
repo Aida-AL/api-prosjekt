@@ -17,9 +17,9 @@ function ImgGrid(){
         
 
     return (
-      <div id = "myGrid" className="grid grid-cols-4 gap-3">
+      <div id = "myGrid" className="grid grid-cols-4 gap-6">
          {material.data.map((object:CompodiumList) => (
-         <CompediumCard key={object.id} object={object}/>
+         <CompediumCard key={object.name} object={object}/>
         ))}
         </div>
         );
