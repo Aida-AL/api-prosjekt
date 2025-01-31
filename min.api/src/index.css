@@ -4,13 +4,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
 body{
  background:url(../src/pictures/27948175156_c7b2367d07_o.jpg);
  background-repeat: no-repeat;
  background-attachment: fixed;
 }
 
+/*-------------Individual_Cards-----------------*/
 #card{
     background-color: rgb(215, 239, 240);
     border-radius: 5px;
@@ -22,14 +22,21 @@ body{
     width: 100%;
     padding: 4%;
 }
+
+/*-------------Grid-----------------*/
+
 #myGrid{
     margin: 7%;
     padding: 2%;
     background-color: rgba(95, 158, 160, 0.634);
     border-radius: 4px;
 }
+
+/*-------------search-----------------*/
+
 .search{
     width: 100%;
+   
     padding: 35%;
     padding-top: 30px;
     padding-bottom: 0%;
@@ -37,11 +44,14 @@ body{
 #searchBar{
     display: flex;
     background-color: rgba(95, 158, 160, 0.634);
+  
     text-align: center;
     border-radius: 4px;
     color: white;
     font-size: 2rem;
     max-width: fit-content;
+   
+   
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;

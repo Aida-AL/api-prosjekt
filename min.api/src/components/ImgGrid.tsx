@@ -1,4 +1,3 @@
-//import { useEffect, useState } from "react";
 import {CompodiumList } from "../types/types.ts";
 import CompediumCard from "./CoCard";
 import { useItems } from "../hooks/useItems.ts";
@@ -13,8 +12,6 @@ function ImgGrid(){
    if (isLoading || isPending) {
       return <div>Loading...</div>;
     }
-        
-        
 
     return (
       <div id = "myGrid" className="grid grid-cols-4 gap-6">
